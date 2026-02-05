@@ -1,28 +1,134 @@
-.flex-container {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: row;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: black;
 }
 
+/* A nav bar with a white line */
 .nav_bar {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 0, 200);
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #000000;
+    border-bottom: 1px solid white; 
 }
 
-.flex-container2 {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
 }
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+
+/* Gradient background (my fav color is black and navy blue hehe) */
+.main-gradient-wrapper {
+    background: linear-gradient(to bottom, #000000 0%, #000814 40%, #001a33 100%);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 80px 10%;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Profile pic dims */
+.profile-pic {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+/* Centered project section */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Centers the cards */
+    gap: 25px;
+    padding: 20px 8%;
+    flex-wrap: wrap; /* Allows cards to stack on small screens */
+}
+
+.card {
+    width: 300px; /* Uniform width */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card h4 {
+    color: #4eb5d4; /* Subtle blue accent */
+    margin-bottom: 15px;
+}
+
+/* Info split */
+.info-split {
+    display: flex;
+    gap: 50px;
+    padding: 80px 8%;
+}
+
+.info-box { flex: 1; }
+
+/* The bottom white line */
+.section-divider {
+    border: 0;
+    border-top: 1px solid white;
+    width: 84%; /* Matches the padding of the nav */
+    margin: 0 auto;
+}
+
+/* Footer style */
+.footer {
+    padding: 50px 8%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.align-right { text-align: right; }
+
+.footer h4 { color: #4eb5d4; margin-bottom: 10px; }
+
+.footer p, .footer a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p { color: #3b82f6; }
+
+.back-to-top {
+    color: #4eb5d4;
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
