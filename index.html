@@ -1,93 +1,94 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Szhan Wayne Timosan</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
 
-<html>
-  <head>
-    <title>Sample Web Page</title>
-    <link rel="stylesheet" type="text/css" href="flex.css" />
-
-  </head>
-
-  <body>
-    
-    <nav>
-    <div class="nav_bar" >
-        <div class="flex-item" style="flex: 1">
-            <a href="/html/">HTML</a> |
+    <nav class="nav_bar">
+        <div class="logo"><strong>PORTFOLIO</strong></div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
         </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/css/">CSS</a>
-        </div> 
-    |   <div class="flex-item" style="flex: 1">
-            <a href="/js/">JavaScript</a> |
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/python/">Python</a>
-        </div>
-    </div>
     </nav>
 
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-  </body>
+    <div class="main-gradient-wrapper">
+        <header class="hero">
+            <div class="hero-content">
+                <img src="szhan.jpg" alt="Personal Photo" class="profile-pic">
+                <div class="hero-text">
+                    <h1>SZHAN WAYNE TIMOSAN</h1>
+                    <h3>Frontend Software Engineer</h3>
+                    <p>As an aspiring software engineer and a graduating Computer Science student at the University of the Philippines, I bridge the gap between rigorous software logic and fluid user experiences. My portfolio reflects a diverse technical range—from architecting Python-based inventory systems to developing immersive JavaFX environments and responsive web applications. I am driven by the challenge of transforming complex problems into elegant, high-performance tools that simplify the user’s journey. Explore my work below and let’s connect.</p>
+                </div>
+            </div>
+        </header>
 
+        <section id="projects" class="project-section">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="flex-container">
+                <div class="card">
+                    <h4>Personal Website</h4>
+                    <p>A website designed to showcase my technical skills and a curated collection of my software development projects.</p>
+                </div>
+                <div class="card">
+                    <h4>Gardening Inventory System</h4>
+                    <p>A Python-based system to manage plant data, fertilizer tracking, and a comprehensive transaction log.</p>
+                </div>
+                <div class="card">
+                    <h4>FISHDA: Pixel Art Adventure</h4>
+                    <p>A relaxing JavaFX fishing game. Catch various fish, upgrade equipment, and build a collection in a charming retro-style world.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-split">
+            <div id="skills" class="info-box">
+                <h2>SKILLS</h2>
+                <ul>
+                    <li>Languages: Python, Java, C Programming, R programming</li>
+                    <li>Web Development: HTML, CSS, JavaScript</li>
+                    <li>Good at project documentation</li>
+                    <li>Good at basketball</li>
+                    <li>Can play any online games</li>
+                    <li>Can sleep for about 12 hours straight</li>
+                    <li>Really good at playing mobile legends</li>
+                </ul>
+            </div>
+
+            <div id="about" class="info-box">
+                <h2>AUTOBIOGRAPHY</h2>
+                <p>I am a graduating Computer Science student from the University of the Philippines, dedicated to the art of software engineering. My work sits at the intersection of aesthetic frontend design. From crafting responsive, pixel-perfect user interfaces to architecting complex Python and Java systems, I build digital solutions that are as functional as they are intuitive</p>
+            </div>
+        </section>
+
+<hr class="section-divider">
+
+        <hr class="section-divider">
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h4>Contact Information</h4>
+                    <p>Address: 2588 Tagpuan Street, Bayog, Los Banos, Laguna</p>
+                    <p>Email: sstimosan@up.edu.ph</p>
+                    <p>Contact Number: 09478070739</p>
+                </div>
+                <div class="footer-column align-right">
+                    <h4>Website Link</h4>
+                    <a href="https://cmsc100-laboratory.github.io/exer-02-html-and-css-szhan17/" target="_blank">https://cmsc100-laboratory.github.io/exer-02-html-and-css-szhan17/</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Szhan Wayne S. Timosan. All rights reserved.</p>
+                <a href="#" class="back-to-top">Back to Top</a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
